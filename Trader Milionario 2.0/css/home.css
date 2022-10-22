@@ -1,0 +1,1195 @@
+
+@font-face{
+  font-family:"baloo2";
+  src: url('../font/Baloo_2/Baloo2-Regular.ttf');
+}
+@font-face{
+  font-family:"NotoSans";
+  src: url('../font/Noto_Sans/NotoSans-Regular.ttf');
+}
+
+
+/* Styles */
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: NotoSans;
+  background-color: #000;
+  color:#fff;
+  margin:0;
+}
+
+h1,h2{
+  font-size: 38px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+a{
+  text-decoration:none;
+  color:#fff;
+}
+ul{
+  list-style-type: none;
+ }
+
+ p ,span{
+  font-family: baloo2;
+ }
+
+.comprar{
+  color:white;
+  font-family: NotoSans;
+  width: 100%;
+  font-size: 28px;
+  background-color:rgb(43, 198, 43);
+  padding: 4%;
+  border:none;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-box-shadow:  0px 0px 30px rgb(43, 198, 43);
+          box-shadow:  0px 0px 30px rgb(43, 198, 43);
+  
+
+}
+
+#cronomet{
+  background-color: rgb(43, 198, 43);
+  padding:1%;
+  text-align: center;
+  font-size: 20px;
+}
+
+#cronomet p{
+  margin:0px;
+}
+
+#cronomet .cronometro{
+  width: 30%;
+  margin: 0px 35%;
+  padding:0px;
+}
+
+#cronomet .cronometro li{
+  background-color:rgba(0, 0, 0,.0);
+  margin-right:2%;
+}
+
+#cronomet .cronometro li span{
+  font-size: 23px;
+}
+
+header{
+  letter-spacing: 3px;
+  text-align: center;
+  padding:2% 28% 15% 28% ;
+  background-image: -o-linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.8)), url(../img/tela1.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.99)), to(rgba(0,0,0,.8))), url(../img/tela1.png);
+  background-image: linear-gradient(rgba(0,0,0,.99), rgba(0,0,0,.8)), url(../img/tela1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 50px #000;
+          box-shadow: inset 0px 0px 50px #000;
+}
+
+header h2{
+  font-size: 40px;
+}
+
+header span{
+  color:rgb(43, 198, 43);
+}
+
+header span::after{
+  content: "|";
+  margin-left: 0.2%;
+  -webkit-animation: piscar .6s infinite;
+          animation: piscar .6s infinite;
+}
+
+
+header iframe{
+  margin-top: 8%;
+} 
+
+header .comprar{
+  margin-top: 1%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+section{
+  text-align: center;
+}
+
+section #metodoMilionario {
+  padding: 5% 15%;
+}
+
+section #metodoMilionario h1{
+  margin-bottom: 10%;
+}
+
+section #metodoMilionario img{
+  float: left;
+}
+
+section #metodoMilionario p{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 45%;
+}
+
+section #oqueAprender {
+  position: relative;
+  padding:5% 0px ;
+  text-align: center;
+  height: 1700px;
+  overflow: hidden;
+}
+
+#oqueAprender h2{
+  margin-bottom: 10%;
+}
+
+#oqueAprender #linhaTempo{
+  margin-top: 100px;
+  position: absolute;
+  height: 1000px;
+  border-right: 4px dashed #fff;
+  left:50%;
+}
+
+#oqueAprender #grupCirculo{
+  padding-top:37px;
+}
+#oqueAprender .circulo{
+  position: relative;
+  background-color: white;
+  color:black;
+  font-size: 35px;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 280px;
+  margin-left:-34px;margin-bottom: 280px;
+  left: 50%;
+}
+
+#oqueAprender .circulo div{
+  position: absolute;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  border-bottom:38px solid white;
+  -webkit-transform: rotate(-90DEG);
+      -ms-transform: rotate(-90DEG);
+          transform: rotate(-90DEG);
+  margin-left: -33px;
+}
+
+#oqueAprender .circulo.bonus{
+  background-color: rgb(43, 198, 43);
+  color:white;
+}
+
+#oqueAprender .circulo.bonus div{
+  border-bottom-color: rgb(43, 198, 43) ;
+  
+}
+
+#oqueAprender .circulo .right{
+  -webkit-transform: rotate(90DEG);
+      -ms-transform: rotate(90DEG);
+          transform: rotate(90DEG);
+  margin-left: 33px;
+}
+
+
+#oqueAprender ul{
+  position: absolute;
+  width: 100%;
+  padding: 0px;
+}
+
+#oqueAprender ul li{
+  width: 100%;
+  height: 350px;
+}
+#oqueAprender ul .left{
+  float: right;
+  text-align: right;
+  padding-right: 56%;
+  
+}
+
+#oqueAprender ul .right{
+  float: left;
+  text-align: left;
+  padding-left: 56%;
+  width: 44%;
+  
+}
+
+#oqueAprender ul li h3,#oqueAprender ul li.bonus h4{
+  color:rgb(43, 198, 43);
+}
+
+#oqueAprender ul li > *{
+  margin-top:-15px;
+}
+
+#oqueAprender ul li span{
+  font-size: 18px;
+  margin-right: 5px;  
+  font-weight: bold;
+}
+
+#oqueAprender ul li p{
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+section #fundador {
+  padding:5% 15% ;
+  overflow: hidden;
+  text-align: left;
+}
+
+ #fundador img{
+  float: left;
+}
+
+
+ #fundador h2 {
+  margin-top: 0px;
+  color:rgb(43, 198, 43);
+  margin-left: 45%;
+}
+
+ #fundador p {
+  margin-top: 5%;
+  margin-left: 45%;
+  font-size: 18px;
+}
+
+ #fundador #redesSociais {
+  margin-left: 45%;
+}
+
+#fundador #redesSociais img {
+  margin-right: 1%;
+}
+
+section #depoimentos {
+  padding: 5% 0px;
+  text-align: center;
+}
+
+#depoimentos ul {
+  padding-left: 0px;
+  margin: 2% 0px;
+}
+
+#depoimentos ul li{
+  display: inline-block;
+  border: 2px solid rgb(43, 198, 43);
+  padding: 0.5% 1%;
+  -webkit-box-shadow:  0px 0px 20px rgb(43, 198, 43);
+          box-shadow:  0px 0px 20px rgb(43, 198, 43);
+  margin:1%;
+}
+
+section #garantia {
+  padding:10% 20% ;
+  overflow: hidden;
+  text-align: left;
+}
+
+#garantia h2,#garantia  h3{
+  text-align: center;
+}
+
+#garantia h2{
+  font-size: 38px;
+  margin-bottom: 0px;
+}
+
+#garantia h3{
+  font-size: 16px;
+  margin-bottom: 10%;
+}
+
+#garantia img{
+  float: right;
+}
+
+#garantia p{
+  font-size: 18px;
+  margin-right: 50%;
+}
+
+#garantia p:nth-child(7){
+  margin-bottom: 10%;
+}
+
+#garantia .comprar{
+  width: 60%;
+  padding: 3%;
+  font-size: 23px;
+}
+
+section #Promocao {
+  padding: 5% 20%;
+}
+
+#Promocao p{
+  font-family: NotoSans;
+  font-size: 30px;
+}
+#Promocao p{
+  font-family: NotoSans;
+  font-size: 30px;
+}
+
+#Promocao p:nth-child(1){
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+#Promocao p:nth-child(3){
+  margin-top: 5%;
+}
+
+#Promocao p b{
+  color:rgb(119, 245, 119)
+}
+
+
+
+#Promocao p span {
+  font-size: 90px;
+}
+
+#Promocao p span #valor{
+  color:rgb(43, 198, 43);
+}
+
+#Promocao .cronometro{
+  padding: 0px;
+  margin:12% 20%;
+  background-color:black;
+}
+
+#Promocao .cronometro li{
+  background-color:black;
+}
+
+#Promocao .comprar{
+  border-radius: 30px;
+}
+
+#Promocao #imagensPagg{
+  margin-top: 5%;
+}
+
+#Promocao #imagensPagg img{
+  margin:2% 1%;
+}
+
+
+section #Comentarios {
+  margin:5% 0px;
+ padding:5% 0px ;
+}
+
+#Comentarios ul  {
+  padding-left:0px;
+  padding: 5% 0px;
+}
+
+#Comentarios ul li {
+  margin:0px 3%;
+  width: 350px;
+  outline: 0px;
+  display: inline-block;
+
+}
+
+#Comentarios ul li .mensagem {
+  position: relative;
+  font-size: 18px;
+  text-align: left;
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  padding:10%;
+  width: 100%;
+  height: 250px;
+  border:5px solid rgb(43, 198, 43) ;
+  margin-bottom: 12%;
+}
+
+.mensagem p{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+
+ .mensagem::before{
+   margin-top: 61%;
+    content: " ";
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid rgb(43, 198, 43);
+    position: absolute;
+}
+
+.mensagem::after{
+  margin-top: 9%;
+   content: " ";
+   border-left: 25px solid transparent;
+   border-right: 25px solid transparent;
+   border-top: 25px solid black;
+   position: absolute;
+}
+
+#Comentarios ul li img{
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius:50%;
+  float: left;
+  margin-left: 7%;
+}
+
+#Comentarios ul li span{
+  float: left;
+  width: 50%;
+  text-align: left;
+  margin-left: 8%;
+}
+
+#Comentarios ul li .nome{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#Comentarios ul li .data{
+  font-size: 17px;
+}
+
+
+section #cadastro {
+  padding:5% 25%;
+  background-image: -o-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../img/tela4.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.8)), to(rgba(0,0,0,.8))), url(../img/tela4.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../img/tela4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow:inset 0px 30px 40px #000;
+          box-shadow:inset 0px 30px 40px #000;
+}
+
+#cadastro form{
+  background-color: rgb(255,255, 255,.1);
+  padding: 5%;
+}
+
+#cadastro h5{
+  font-size: 25px;
+}
+
+#cadastro p{
+  font-size:  20px;
+  margin:0px 10%;
+  margin-bottom: 5%;
+}
+
+#cadastro input{
+  margin-top: 2%;
+  width: 90%;
+  padding:3% ;
+  font-size: 23px;
+  color:#525151;
+}
+
+#cadastro #cadastrar{
+  width: 97%;
+  border:0px;
+  background-color: rgb(43, 198, 43);
+  color:white;
+}
+
+#cadastro .cronometro{
+  padding: 2%;
+}
+
+.cronometro li{
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 0px;
+  width: 15%;
+  background-color: rgb(43, 198, 43);
+  display: inline-block;
+  padding: 1.9%;
+  margin-right:4%;
+}
+
+.cronometro li:nth-child(5){
+  margin-right:0px;
+}
+
+.cronometro li span{
+  font-size: 35px;
+}
+
+footer{
+  color:#c7c7c7;
+  padding: 5% 3%;
+  margin-bottom: 0px;
+  background-color:#222222;
+}
+
+footer a {
+  color:#c7c7c7;
+}
+
+footer ul{
+  margin: 0px;
+}
+
+footer ul li{
+  margin-left:7%;
+  outline: 0px;
+  display: inline-block;
+  vertical-align:text-top;
+  font-size: 16px;
+}
+
+footer ul li:nth-child(1){
+  margin-left:0px;
+}
+
+footer ul li ul{
+  padding-left: 0px;
+}
+
+footer ul li ul li{
+  color: #c7c7c7;
+  display: block;
+  margin-left:0px;
+}
+
+footer h4{
+  color:rgb(212, 212, 212);
+  font-size: 16px;
+}
+
+#direitosReservados{
+  color: #c7c7c7;
+  padding: 0.2%;
+  text-align: center;
+  background-color: #1a1919;
+}
+
+#direitosReservados h5{
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#direitosReservados a{
+  color: #c7c7c7;
+  border-bottom:1px solid #c7c7c7; ;
+}
+
+#whatsapp{
+  width: 5.6%;
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity:1;
+}
+
+#whatsapp:hover{
+  width: 6.6%;
+  right: 4.5%;
+  bottom: 5.5%;
+}
+#whatsapp img{
+  width:100%;
+}
+
+.notificacoes{
+  position: fixed;
+  left:0%;
+  bottom: 15%;
+  background-color: rgb(43, 198, 43);
+  color:white;
+  width:30%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  opacity: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0px 0px 8px rgb(0, 0, 0);
+          box-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+
+.animation {
+  bottom: 1.5%;
+  opacity: 1;
+}
+
+.notificacoes ul {
+  padding: 0px;
+  margin: 2%;
+  
+}
+
+.notificacoes ul li{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 1%;
+  max-width: 82%;
+}
+
+.notificacoes ul li:nth-child(1){
+  margin-left:0px;
+}
+
+.notificacoes ul li p{
+  margin:0px;
+
+}
+
+.notificacoes ul li span{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.notificacoes #fechar{
+  font-weight: bold;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding-left: 1px;
+  padding-bottom: 1px;
+  font-size:14px ;
+  text-align: center;
+  margin-right: -1%;
+  margin-top: -1%;
+  border-radius:100%;
+}
+
+.notificacoes #fechar:hover{
+  background-color: rgba(0, 0, 0,.4);
+
+}
+
+.notificacoes #tempo{
+  width: 1%;
+  height: 4px;
+  background-color: white;
+}
+
+.enviado{
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.enviado #tx{
+  background-color: rgba(0, 0, 0,.4);
+  position: fixed;
+  width:100vw ;
+  height: 100vh;
+  padding:10% 40%;
+}
+
+.enviado #tx #text {
+  background-color: white;
+  color:black;
+  padding:2%;
+  border-radius: 8px;
+  width: 20%;
+  text-align: center;
+  -webkit-animation: 8s enviar ;
+          animation: 8s enviar ;
+
+}
+
+[data-animeScroll]{
+  opacity: 0;
+  -webkit-transition:  .3s;
+  -o-transition:  .3s;
+  transition:  .3s;
+}
+
+[data-animeScroll ="left"]{
+  -webkit-transform: translate3d(-100px,0,0);
+          transform: translate3d(-100px,0,0);
+}
+
+[data-animeScroll ="right"]{
+  -webkit-transform: translate3d(100px,0,0);
+          transform: translate3d(100px,0,0);
+}
+
+[data-animeScroll].animate{
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+
+}
+
+@media (min-width: 0px) and (max-width: 800px){
+  h1,h2{
+    font-size: 28px;
+  }
+  
+  h3{
+    font-size: 22px;
+  }
+  
+  h4{
+    font-size: 18px;
+  }
+
+  #cronomet {
+    padding: 5%;
+  }
+
+  #cronomet .cronometro{
+    width: 100%;
+    margin: 0px;
+  }
+  
+  #cronomet .cronometro li{
+    width: 15%;
+  }
+  
+  header{
+    padding:2% 10% 15% 10% ;
+    letter-spacing: 2px;
+  }
+
+  header img{
+    width: 40%;
+  }
+  
+  header h2{
+   font-size: 25px;
+  }
+  
+   header br{
+    content: "";
+  }
+  header iframe{
+    height: 190px;
+    margin-top: 5%;
+  }
+  header .comprar{
+    margin-top: 3%;
+    font-size: 23px;
+  }
+  section #metodoMilionario {
+    padding: 5% 15%;
+  }
+  
+  section #metodoMilionario img{
+    float: none;
+    width: 50%;
+  }
+  
+  section #metodoMilionario p{
+    text-align: center;
+    margin-left: 0px;
+  }
+  
+  section #oqueAprender {
+    height: 1900px;
+  }
+  #oqueAprender #linhaTempo{
+    height: 1300px;
+    left:12%;
+  }
+  
+  #oqueAprender #grupCirculo{
+    padding-top:50px;
+  }
+  #oqueAprender .circulo{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    margin-left: -19px;
+    margin-bottom: 400px ;
+    left: 12%;
+  }
+  
+  #oqueAprender .circulo div{
+    opacity: 0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:28px solid white;
+    -webkit-transform: rotate(90DEG);
+        -ms-transform: rotate(90DEG);
+            transform: rotate(90DEG);
+    margin-left: 18px;
+  }
+  
+  #oqueAprender .circulo.bonus{
+    background-color: rgb(43, 198, 43);
+    color:white;
+  }
+  
+  #oqueAprender .circulo .right{
+    -webkit-transform: rotate(90DEG);
+        -ms-transform: rotate(90DEG);
+            transform: rotate(90DEG);
+    margin-left: 18px;
+  }
+
+  #oqueAprender ul{
+    padding-top:5%;
+  }
+
+  #oqueAprender ul li{
+    padding-top: 0px;
+    height: 440px;
+  }
+  #oqueAprender ul .left{
+    float: left;
+    text-align: left;
+    padding-left: 28%;
+    width: 70%;
+  }
+  
+  #oqueAprender ul .right{
+    float: left;
+    text-align: left;
+    padding-left: 28%;
+    width: 70%;
+  }
+  
+  #oqueAprender ul li span{
+    font-size: 18px;
+    margin-right: 5px;  
+    font-weight: bold;
+  }
+  
+  #oqueAprender ul li p{
+    margin-top: 4px;
+    font-size: 18px;
+  }
+  
+  section #fundador {
+    padding:10% 15% ;
+    text-align: center;
+  }
+  
+   #fundador img{
+     width: 90%;
+    float: none;
+  }
+  
+   #fundador h2 {
+    margin-top: 10%;
+    color:rgb(43, 198, 43);
+    margin-left: 0px;
+  }
+  
+   #fundador p {
+    margin-top: 10%;
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  
+   #fundador #redesSociais {
+    margin-left: 0px;
+  }
+  
+  #fundador #redesSociais img {
+    width: 20%;
+  }
+  
+  section #depoimentos {
+    padding: 10% 0px;
+  }
+ 
+  #depoimentos ul li{
+    border:4px solid rgb(43, 198, 43) ;
+    margin:5%;
+  }
+
+  #depoimentos ul li iframe{
+    width: 100%;
+  }
+  
+  section #garantia {
+    padding: 10%;
+    text-align: center;
+  }
+  
+  #garantia h2{
+    font-size: 28px;
+  }
+
+  #garantia img{
+    width: 70%;
+    float: none;
+  }
+  
+  #garantia p{
+    font-size: 18px;
+    margin-right:0px;
+  }
+
+  #garantia .comprar{
+    width: 100%;
+  }
+
+
+  
+  section #Promocao {
+    padding: 10% 5%;
+  }
+
+  
+  #Promocao p{
+    font-size: 25px;
+  }
+  
+  #Promocao p span {
+    font-size: 50px;
+  }
+  
+  #Promocao .cronometro{
+    padding: 0px;
+    margin:12% 0px;
+  }
+  
+  #Promocao .cronometro li{
+    width: 19%;
+    margin-right:0px;
+  }
+  
+  
+  #Promocao .comprar{
+    border-radius: 10px;
+  }
+  
+  #Promocao #imagensPagg img{
+    width: 20%;
+    margin:3%;
+  }
+  
+  
+  section #Comentarios {
+   padding:10% 2.5%;
+  }
+  
+  #Comentarios ul li {
+    width: 300px;
+    margin:10% 0px;
+  
+  }
+  
+  #Comentarios ul li .mensagem {
+    font-size: 17px;
+    margin-bottom: 12%;
+  }
+  
+   .mensagem::before{
+     margin-top: 74%;
+  }
+
+  
+  section #cadastro {
+    padding:5%;
+  }
+  
+  #cadastro p{
+    margin:0px 5%;
+    margin-bottom: 5%;
+  }
+  
+  #cadastro .cronometro{
+    padding: 2%;
+  }
+  
+  .cronometro li{
+    border-radius: 8px;
+    width: 20%;
+    padding: 1.5%;
+    margin-right:1%;
+    font-size: 14px;
+  }
+  
+  .cronometro li:nth-child(5){
+    margin-right:0px;
+  }
+  
+  .cronometro li span{
+    font-size: 28px;
+  }
+  footer ul {
+    padding-left: 0px;
+    text-align: center;
+  }
+  footer ul li{
+    margin-left:0px;
+    display:block;
+    margin-top: 15%;
+  }
+
+  footer ul li ul li{
+    margin: 0px;
+  }
+
+  footer img{
+    width: 30%;
+  }
+  
+  footer h4{
+    font-size: 18px;
+  }
+  #direitosReservados h5{
+    font-size: 16px;
+  }
+  
+  #direitosReservados a{
+    color: #c7c7c7;
+    border-bottom:1px solid #c7c7c7; ;
+  }
+  
+  #whatsapp{
+    width: 20%;
+    right: 5%;
+    bottom: 10%;
+  }
+  
+  #whatsapp:hover{
+    width: 20%;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  .notificacoes{
+    width:100%;
+    font-size: 18px;
+    top: 15%;
+    bottom: unset;
+  }
+
+  .notificacoes ul li {
+    max-width: 77%;
+  }
+
+  .notificacoes img {
+   width: 90%;
+  }
+  
+  .animation {
+    top: 0%;
+    bottom: unset;
+    opacity: 1;
+  }
+  [data-animeScroll ="left"]{
+    -webkit-transform: translate3d(100px,0,0);
+            transform: translate3d(100px,0,0);
+  }
+  
+  [data-animeScroll ="right"]{
+    -webkit-transform: translate3d(100px,0,0);
+            transform: translate3d(100px,0,0);
+  }
+}
+
+/* Animations */
+
+@-webkit-keyframes piscar{
+  0%,100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+@keyframes piscar{
+  0%,100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes tempo{
+  0%{
+    width: 1%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes tempo{
+  0%{
+    width: 1%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes enviar{
+  0%{-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+  5%{-webkit-transform: translate3d(0,200px,0);transform: translate3d(0,200px,0);}
+  95%{-webkit-transform: translate3d(0,200px,0);transform: translate3d(0,200px,0);}
+  100%{-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
+
+@keyframes enviar{
+  0%{-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+  5%{-webkit-transform: translate3d(0,200px,0);transform: translate3d(0,200px,0);}
+  95%{-webkit-transform: translate3d(0,200px,0);transform: translate3d(0,200px,0);}
+  100%{-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+}
